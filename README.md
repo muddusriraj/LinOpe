@@ -1,1 +1,1 @@
-# LinOpeC
+# LinOpeC++
