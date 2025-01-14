@@ -1,9 +1,9 @@
-#include "operators.h"
 #include <GL/freeglut.h>
 #include <GL/gl.h>
 #include <GL/glu.h>
 #include <pybind11/pybind11.h>
 #include <pybind11/stl.h>  
+#include "graph.h"
 
 namespace py = pybind11;
 
