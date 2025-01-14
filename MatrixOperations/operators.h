@@ -317,6 +317,43 @@ Matrix reduce(Matrix A, bool inPlace=true){
     return A;
 }
 
+Matrix rowReduce(Matrix A){
+    for(int i=0;i<A.rows();i++){
+        if(A[i][i]==0){
+            for(int j=i;j<A.rows();j++){
+                if(A[j][i]!=0){
+                    darray temp = A[j];
+                    A[j]=A[i];
+                    A[i]=temp;
+                }
+            }
+        }
+    }
+    for(int i=0;i<A.rows(); i++){
+        for(int j=i+1;j<A.rows();j++){
+            if(j>=A.rows()){
+                break;
+            }
+            if(A[j][i]!=0){
+                double factor = A[j][i]/A[i][i];
+                for(int x=0;x<A.cols();x++){
+                    A[j][x] = A[j][x] - factor*A[i][x];
+                }   
+            }
+        }
+    }
+    double factor{};
+    for(int i=A.rows()-1;i>=0;i--){
+        if(A[i][i]==0) continue;
+        std::cout<<factor;
+        factor = 1.0/A[i][i];
+        A[i] = A[i] * factor;
+
+
+    }
+    return A;
+}
+
 Matrix transpose(Matrix A){
     Matrix transposeA(A.cols(), A.rows());
     for(int i=0; i<A.cols(); i++){
