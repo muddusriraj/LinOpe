@@ -48,3 +48,4 @@ Standalone Methods:
 (MatrixOperations/graph.h)
 Methods:
 -   void plot(const std::vector<darray>& vectors, const std::vector<std::string> colors = {"blue"})
+        - Allows user to plot vectors
