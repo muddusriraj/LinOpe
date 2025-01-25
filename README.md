@@ -1,6 +1,6 @@
 # LinOpeC++
 
-Simple C++ Library (also compiled into a Python extension using pybind11) for Basic Matrix Operations and Vector plotting.
+Simple C++ Library for Basic Matrix Operations and Vector plotting.
 
 Includes:
 
