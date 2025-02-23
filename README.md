@@ -56,3 +56,6 @@ Methods:
 Methods:
 -   darray& lrm(Matrix &X, Matrix &Y); multivariate regression, returns beta matrix 
 -   std::vector<double> slrm(darray x, darray y); simple linear regression, returns beta and intercept
+
+For Test Regression:
+-  recieved salary data from https://www.kaggle.com/datasets/ravitejakotharu/salary-datacsv/data
